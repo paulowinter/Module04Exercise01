@@ -1,4 +1,9 @@
 # Module04Exercise01
 
-## LoginPage message ("Welcome to the Employee View App")
-![Emulator](screenshots/module03exercise02.png)
+## Unfilled Form
+![Emulator](Screenshots/unfilled.png)
+![Emulator](Screenshots/unfilled1.png)
+
+## Filled Form
+![Emulator](Screenshots/filled.png)
+![Emulator](Screenshots/filled1.png)
