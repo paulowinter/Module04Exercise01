@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module03Exercise02.View.AddEmployee"
+             BackgroundColor="#FFD0D0">
+    
+    <ScrollView>
+        <VerticalStackLayout
+         Padding="30,0"
+         Spacing="25">
+
+            <VerticalStackLayout
+             Padding="50,0">
+
+                <Label Text="Register Employee" FontSize="Header"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Padding="20"/> 
+
+                <Entry Placeholder="Firstname"
+                   HorizontalOptions="FillAndExpand"
+                   PlaceholderColor="#A87676" 
+                   TextColor="#A87676"
+                   BackgroundColor="#fff9fe"
+                   WidthRequest="350"
+                   Margin="0,10"/>
+
+            <Entry Placeholder="Lastname" 
+                   HorizontalOptions="FillAndExpand"
+                   PlaceholderColor="#A87676" 
+                   TextColor="#A87676"
+                   BackgroundColor="#fff9fe"
+                   WidthRequest="350"
+                   Margin="0,10"/>
+
+            <Entry Placeholder="Fullname"
+                   HorizontalOptions="FillAndExpand"
+                   PlaceholderColor="#A87676" 
+                   TextColor="#A87676"
+                   BackgroundColor="#fff9fe"
+                   WidthRequest="350"
+                   Margin="0,10"/>
+
+                <Entry x:Name="AddressLabel"
+                  Placeholder="Location will appear here"
+                  VerticalOptions="CenterAndExpand"
+                       PlaceholderColor="#A87676"
+                       BackgroundColor="#fff9fe"
+                  HorizontalOptions="CenterAndExpand"
+                      TextColor="#A87676" 
+                       WidthRequest="350"
+                       IsEnabled="False"/>
+
+                <Entry Placeholder="Municipality"
+                   HorizontalOptions="FillAndExpand"
+                    PlaceholderColor="#A87676" 
+                   TextColor="#A87676"
+                    BackgroundColor="#fff9fe"
+                    Margin="0,10"
+                       WidthRequest="350"
+                       x:Name="Municipality"/>
+
+            <Entry Placeholder="Province" 
+                    HorizontalOptions="FillAndExpand"
+                    PlaceholderColor="#A87676" 
+                   TextColor="#A87676"
+                    BackgroundColor="#fff9fe"
+                    Margin="0,10"
+                   WidthRequest="350"
+                    x:Name="Province"/>
+
+            <Entry Placeholder="Coordinates" 
+                   x:Name="LocationLabel"
+                   HorizontalOptions="FillAndExpand"
+                    PlaceholderColor="#A87676" 
+                   TextColor="#A87676"
+                   WidthRequest="350"
+                    BackgroundColor="#fff9fe"
+                    Margin="0,10"/>
+            
+            <Entry Placeholder="Position" 
+                   HorizontalOptions="FillAndExpand"
+                    PlaceholderColor="#A87676" 
+                   TextColor="#A87676"
+                   WidthRequest="350"
+                    BackgroundColor="#fff9fe"
+                    Margin="0,10"/>
+            
+            <Entry Placeholder="Department" 
+                   HorizontalOptions="FillAndExpand"
+                    PlaceholderColor="#A87676"
+                   TextColor="#A87676"
+                   WidthRequest="350"
+                    BackgroundColor="#fff9fe"
+                    Margin="0,10"/>
+
+            <Button Text="Take Employee Photo"
+                    Margin="0,10"
+                    VerticalOptions="End"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#CA8787" 
+                    TextColor="White"
+                    CornerRadius="10"
+                    Padding="10,5"
+                    Clicked="OnCapturePhotoClicked"/>
+
+
+                <Image x:Name="CaptureImage"
+                   HeightRequest="300"
+                   WidthRequest="300"
+                   Aspect="AspectFill"/>
+
+
+
+                <Button Text="Get Location"
+                    Margin="0,10"
+                    VerticalOptions="End"
+                    HorizontalOptions="FillAndExpand" 
+                    BackgroundColor="#CA8787" 
+                    TextColor="White"
+                    CornerRadius="10"
+                    Padding="10,5"
+                    Clicked="OnGetLocationClicked"/>
+
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

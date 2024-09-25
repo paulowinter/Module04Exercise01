@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module03Exercise02.View.EmployeePage"
+             Title="EmployeePage"
+             BackgroundColor="#FFD0D0">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+
+            <Label Text="Employee View" FontSize="Header"  HorizontalTextAlignment="Center" TextColor="#A87676" />
+
+            <!-- Label bound to fullname property-->
+            <Label Text="{Binding FullName}" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#A87676" />
+
+            <!-- Button bound to loadstudentdatacommand-->
+            <Button Text="Load Manager Data"
+                    Command="{Binding LoadManagerDataCommand}"
+                    BackgroundColor="#CA8787"/>
+
+            <Label Text="Employees:" FontSize="20"  Margin="0,0,0,-20" TextColor="#A87676" />
+
+            <ListView ItemsSource="{Binding Employees}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Fullnames}"
+                                  TextColor="#A87676" 
+                                  Detail="{Binding Informations}"
+                                  DetailColor="#CA8787" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
